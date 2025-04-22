@@ -1,4 +1,4 @@
-# jumpserver拉起本地navivat油猴脚本
+# jumpserver拉起本地navicat油猴脚本
 
 ## 免责声明
 
@@ -19,7 +19,6 @@
 - 进行测试,拉起navicat后，选择新建连接，然后将密码粘贴进密码框即可(navicat不支持密码自动填充，所以会将密码默认复制到剪切板，直接粘贴即可)
 - 使用完成后，记的删除本地的连接信息
 - 目前支持mysql/pgsql/sqlserver
-- win版本静待后续支持
 
 
 
