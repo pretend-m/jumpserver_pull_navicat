@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         jumpserver自动拉起Navicat(macOS)
+// @name         jumpserver自动拉起Navicat
 // @namespace    http://tampermonkey.net/
 // @version      1.8
-// @description  拦截请求并通过 navicat:// 协议直接拉起 Navicat (macOS)，并自动复制密码到剪切板。
+// @description  拦截请求并通过 navicat:// 协议直接拉起 Navicat，并自动复制密码到剪切板。
 // @author       pretendm
 // @match        https://xxxx.com/luna/*
 // @grant        none
