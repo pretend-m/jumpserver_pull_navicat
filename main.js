@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         jumpserver自动拉起Navicat
 // @namespace    http://tampermonkey.net/
-// @version      1.8
+// @version      1.9
 // @description  拦截请求并通过 navicat:// 协议直接拉起 Navicat，并自动复制密码到剪切板。
 // @author       pretendm
-// @match        https://xxxx.com/luna/*
+// @match        *://*/luna/*
 // @grant        none
 // @run-at       document-start
 // ==/UserScript==
@@ -62,7 +62,7 @@
         // 提取密码
         const password = data.value;
         // 自定义主机地址
-        const host = "xxxx.com";
+        const host = window.location.hostname;
         // 提取连接名
         const name = data.asset_display;
 
