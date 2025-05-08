@@ -12,6 +12,13 @@
 (function () {
     'use strict';
 
+    // 阻止离开弹窗
+    const rawAdd = window.addEventListener;
+    window.addEventListener = function(type, listener, options) {
+        if (type === 'beforeunload') return;
+        return rawAdd.call(this, type, listener, options);
+    };
+    
     // 拦截 XMLHttpRequest 请求
     const originalOpen = XMLHttpRequest.prototype.open;
     XMLHttpRequest.prototype.open = function (method, url, ...rest) {
