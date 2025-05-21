@@ -101,7 +101,7 @@
         const username = data.id;
         const name = data.asset_display.replace(/\([^)]*\)/g, '').trim();
         const host = smartEndpointInfo.host;
-        return `navicat://conn.${protocol}?Conn.Host=${host}&Conn.Port=${port}&Conn.Username=${username}&Conn.Name=${name}`;
+        return `navicat://conn.${protocol}?Conn.Host=${host}&Conn.Port=${port}&Conn.Username=${username}&Conn.Name=JumpServer_${name}`;
     }
 
     function openNavicat(navicatUrl) {
